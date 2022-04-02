@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
+
+:root
+{
+    --cor:#16081E;
+}
+
+.caixa-alta
+{
+    text-transform: uppercase;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.fonte-descricao
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.fonte-titulo
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+/* Início Cabecalho */
+.cabecalho
+{
+    background-color: #16081E;
+    height: 20vh;
+}
+.cabecalho .logo
+{
+    height: 15vh;
+    display: block;
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+@media screen and (min-width:1000px)
+{
+    .cabecalho
+    {
+        height: 25vh;
+    }
+    .cabecalho .logo
+    {
+        height: 20vh;
+    }
+}
+/*Fim Cabecalho */
+
+/*Início Nav */
+
+.menu
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: safe;
+    width: 75vw;
+    height: 100vh;
+    background-color: var(--cor);
+    gap: 15px;
+    transition: .3s;
+    position: absolute;
+    color: #ffffff;
+    top: 20vh;
+    left: -100vw;
+}
+.menu-item:hover
+{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.active
+{
+    transition: .3s;
+    left: 0;
+}
+.button
+{
+    color: white;
+    position: absolute;
+    top: 4%;
+    z-index: 1000000;
+    display: flex;
+    padding: .5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5;
+}
+.hamburguer
+{
+    display: block;
+    border-top: 2px solid ;
+    width: 20px;
+}
+.hamburguer::after, .hamburguer::before
+{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+.nav.active .hamburguer
+{
+    border-top-color:transparent ;
+    transition: 2s;
+}
+.nav.active .hamburguer::before
+{
+    transform: rotate(135deg) ;
+}
+.nav.active .hamburguer::after
+{
+    transform: rotate(-135deg) ;
+    top: -7px;
+}
+
+@media screen and (min-width:1000px)
+{
+    .nav
+    {
+        margin: 0.5% 0;
+    }
+    .button
+    {
+        display: none;
+    }
+    .menu
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: auto;
+        height: auto;
+        background-color: white;
+        gap: 15px;
+        transition: .3s;
+        position: relative;
+        color: var(--cor);
+        top: 0vh;
+        left: 0vw;
+    }
+}
+
+/* Fim Nav */
+
+/*Início Sobre*/
+
+.sobre
+{
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.sobre-titulo 
+{
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+.sobre-imagem
+{
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+}
+.sobre-div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.sobre .sobre-texto
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 100%;
+}
+
+.sobre-descricao
+{
+    text-align:center;
+}
+
+@media screen and (min-width:1000px)
+{
+    .sobre
+    {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+    .sobre-titulo 
+    {
+        margin-top: 4%;
+        margin-bottom: 2%;
+    }
+    .sobre-imagem
+    {
+        width: 225px;
+        height: 225px;
+        border-radius: 50%;
+    }
+    .sobre-div
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 8%;
+    }
+    
+    .sobre .sobre-texto
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        height: 100%;
+    }
+    
+    .sobre-descricao
+    {
+        text-align:center;
+    }
+}
+
+/*Fim Sobre*/
+/* Início Correspondência Jurídica */
+.correspondecia-juridica
+{
+    margin-top: 10%;
+    background-color: var(--cor);
+    text-align:center;
+    color: white;
+    padding: 10% 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.correspondencia-juridica__titulo
+{
+    text-align: center;
+}
+.correspondencia-juridica__sobre
+{
+    text-align: center;
+}
+.correspondecia-juridica__paragrafo--servicos
+{
+    font-weight: 700;
+}
+.correspondencia-juridica__link
+{
+    text-align: center;
+}
+@media screen and (min-width:1000px)
+{
+    .correspondecia-juridica
+    {
+        margin-top: 4%;
+        background-color: var(--cor);
+        text-align:center;
+        color: white;
+        padding: 4% 8%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .correspondencia-juridica__titulo
+    {
+        text-align: center;
+    }
+    .correspondencia-juridica__sobre
+    {
+        text-align: center;
+    }
+    .correspondecia-juridica__paragrafo--servicos
+    {
+        font-weight: 700;
+        width: 80%;
+    }
+    .correspondencia-juridica__link
+    {
+        text-align: center;
+    }
+}
+
+
+/* FIM Correspondência Jurídica */
+
+/* Início Areas Atuação */
+.areas-atuacao-titulo{
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.areas-atuacao-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr) ;
+    align-items: center;
+    row-gap: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+
+.circulo {
+    margin:auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--cor);
+}
+.texto{
+    text-align:center;
+}
+
+@media screen and (min-width:1000px)
+{
+    .areas-atuacao-titulo{
+        padding-top: 2%;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+    
+    .areas-atuacao-div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr) ;
+        align-items: center;
+        row-gap: 5%;
+        padding-bottom: 1%;
+        margin-bottom: 1%;
+    }
+    
+    
+    .circulo
+     {
+        margin:auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: var(--cor);
+    }
+    .texto
+    {
+        padding-top: 1%;
+        text-align:center;
+    }
+}
+/* Fim Areas Atuação */
+/*
+.areas-atuacao{
+    width: 100%;
+    margin-top: 10%;
+}
+
+.areas-atuacao-titulo{
+    text-align: center;
+    color: var(--cor);
+}
+
+.areas-atuacao-div{
+    padding-top: 2%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+.areas-atuacao-itens{
+    margin-top: 5%;
+    width: 33%;
+    color: var(--cor);
+}
+*/
+
+
+
+/*
+.texto{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.areas-atuacao-descricao{
+    padding-top: 5%;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+*/ /* Inicio Consultoria*/
+.consultoria-lgpd{
+    background-color: var(--cor);
+    color: white;
+    margin-top: 4%;
+    padding: 4% 0%;
+}
+.consultoria-lgpd-texto__titulo{
+    text-align: center;
+}
+
+.consultoria-lgpd-texto{
+    padding: 10% 8%;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+@media screen and (min-width:1000px){
+    .consultoria-lgpd{
+        background-color: var(--cor);
+        color: white;
+        margin-top: 2%;
+        padding: 0% 0%;
+    }
+    .consultoria-lgpd-texto__titulo{
+        text-align: center;
+    }
+    
+    .consultoria-lgpd-texto{
+        padding: 4% 8%;
+        text-align:center;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+/* Fim Consultoria*/
+.areas-atuacao-responsivo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.whatsapp {
+    position: fixed;
+    top: 78%;
+    left: 80%;
+    padding: 1%;
+    z-index: 10000000;
+    height: 48px;
+    border-radius: 100%;
+}
+
+@media screen and (min-width:1000px){
+    .whatsapp {
+        position: fixed;
+        top: 78%;
+        left: 90%;
+        padding: 1%;
+        z-index: 10000000;
+        height: 72px;
+        border-radius: 100%;
+    }
+}
+
+
+/* Fim Areas Atuação */
+
+/* Início Contato */
+.contato{
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.contato-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+}
+
+@media screen and (min-width:1000px){
+    .contato{
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+    
+    .contato-texto{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+        margin: 0 auto;
+        width: 60%;
+    }
+}
+/* Fim  AContato */
+
+/* Início Rodape */
+.rodape{
+    background-color: var(--cor);
+}
+
+.rodape-texto{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 1%;
+    font-size: 0.8rem;
+}
+@media screen and (min-width:1000px){
+    .rodape{
+        background-color: var(--cor);
+    }
+    
+    .rodape-texto{
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding: 2%;
+        font-size: 0.9rem;
+    }
+}
+/* Fim Rodape */
+
