@@ -281,14 +281,11 @@ body
 {
     border: 1px solid white;
     text-align: center;
-    width: auto;
-    margin: 0 auto;
-    height: auto;
-    line-height: auto;
-    font-size: 1rem;
     color: white;
-    padding: 2% 3%;
-    border-radius: 60px;
+    border-radius: 2em;
+    padding: 3% 3%;
+   
+    
 }
 
 @media screen and (min-width:1000px)
