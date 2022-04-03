@@ -13,16 +13,21 @@
 body
 {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
 }
+
+
 
 .fonte-descricao
 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    font-size: 1rem;
 }
 
 .fonte-titulo
 {
+    font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
@@ -206,9 +211,8 @@ body
     {
         width: 80%;
         margin: 0 auto;
-        margin-top: 3%;
-        display: flex;
         flex-direction: column;
+        margin-top: 3%;
         align-items: center;
         margin-bottom: 10%;
     }
@@ -226,7 +230,7 @@ body
     .sobre-div
     {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         padding: 0 8%;
@@ -339,6 +343,7 @@ body
 }
 .texto{
     text-align:center;
+    font-weight: 700;
 }
 
 @media screen and (min-width:1000px)
