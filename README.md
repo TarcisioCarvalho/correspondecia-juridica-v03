@@ -1,7 +1,7 @@
 <h1 align = center> Correspondência Jurídica Muriaé
 <h1>
     <div align = "center">
-        <img src="assets/img/Logo.png" alt="">
+        <img src="assets/img/logo.png" alt="">
     </div>
 </h1>
 
