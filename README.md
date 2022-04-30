@@ -5,7 +5,7 @@
     </div>
 </h1>
 
-[Link Para a Página: https://www.marchesebraga.adv.br/](https://tarcisiocarvalho.github.io/Alura-Challenges---Semana-1v0.2)
+[Link Para a Página: https://www.marchesebraga.adv.br/](https://www.marchesebraga.adv.br/)
 
 
 <h3>Correspondência Jurídica </h3>
