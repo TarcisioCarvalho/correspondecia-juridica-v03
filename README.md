@@ -5,12 +5,12 @@
     </div>
 </h1>
 
-[Link Para a Página: https://www.marchesebraga.adv.br/](https://www.marchesebraga.adv.br/)
+[Link Para a Página](https://tarcisiocarvalho.github.io/correspondecia-juridica-v03/)
 
 
 <h3>Correspondência Jurídica </h3>
 
-<p>Ladding Page simples feita com html css e javascript, hospedada de forma profissional com dominio próprio e certificado SLL. </p>
+<p>Ladding Page  feita com html css e javascript. </p>
 
 <h2>Sobre a página:</h2>
 
